@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 source 'https://rails-assets.org' do
   gem 'rails-assets-growl', '~> 1.3.1'
 end
-
+ruby '2.5.1'
 # Declare your gem's dependencies in activeadmin_jobs.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
