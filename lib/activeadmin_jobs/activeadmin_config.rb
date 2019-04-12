@@ -1,5 +1,6 @@
 module AdminHelpers
   def self.jobs_url
+
     url = ["/"]
 
     if ActiveAdmin.application.default_namespace.present?
@@ -8,17 +9,18 @@ module AdminHelpers
 
     url << "jobs"
     url.join("")
+
   end
 end
 
 ActiveAdmin.application.load_paths += [File.join(ActiveadminJobs::Engine.root, "app", "admin")]
 
 class ActiveAdmin::Views::Pages::Base
-  alias_method :original_build, :build
+
+  alias_method :jobs_original_build, :build
 
   def build(*args)
-    original_build(args)
-    body.set_attribute "data-default-select", ActiveadminAddons.default_select
+    jobs_original_build(args)
 
     current_user_method = ActiveAdmin.application.current_user_method
     if current_user_method
