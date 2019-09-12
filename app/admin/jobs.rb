@@ -6,8 +6,7 @@ ActiveAdmin.register JobNotifier::Job, as: "Job" do
 
   controller do
     def scoped_collection
-      user = send(ActiveAdmin.application.current_user_method)
-      JobNotifier::Job.where(identifier: user.job_identifier)
+      JobNotifier::Job.all
     end
   end
 
