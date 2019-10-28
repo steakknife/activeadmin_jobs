@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
 
   s.files = `git ls-files`.split($/).reject { |fn| fn.start_with? "spec" }
 
-  s.add_dependency "rails", "~> 5.2.3"
+  s.add_dependency "rails", ">= 5.2.3"
   s.add_dependency "job_notifier", ">= 1.2.4"
   s.add_dependency "devise", ">= 3.5.0"
   s.add_dependency "activeadmin", ">= 1.4.3"
