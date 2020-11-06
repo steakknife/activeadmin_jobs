@@ -28,7 +28,7 @@ class ActiveAdmin::Views::Pages::Base
       body.set_attribute "data-identifier", admins_job_identifier
       body.set_attribute "data-root-url", "/"
       body.set_attribute "data-jobs-url", AdminHelpers.jobs_url
-      body.set_attribute "data-translations", I18nDictionary.translations.to_json
+      body.set_attribute "data-translations", ActiveadminJobs::I18nDictionary.translations.to_json
     end
   end
 

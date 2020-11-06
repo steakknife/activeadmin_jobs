@@ -1,4 +1,4 @@
-module I18nDictionary
+module ActiveadminJobs::I18nDictionary
   def self.translations
     I18n.backend.load_translations
     translations = I18n.backend.send(:translations)
