@@ -7,7 +7,7 @@ require "zeitwerk"
 loader = Zeitwerk::Loader.for_gem
 
 admin_ext = "#{__dir__}/app/admin/jobs.rb"
-config_ext = "#{__dir__}/lib/ctiveadmin_jobs/activeadmin_config.rb"
+config_ext = "#{__dir__}/lib/activeadmin_jobs/activeadmin_config.rb"
 loader.ignore(config_ext)
 loader.setup
 
