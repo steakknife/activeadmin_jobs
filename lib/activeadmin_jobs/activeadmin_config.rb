@@ -13,7 +13,7 @@ module AdminHelpers
   end
 end
 
-ActiveAdmin.application.load_paths += [File.join(ActiveadminJobs::Engine.root, "app", "admin")]
+#ActiveAdmin.application.load_paths += [File.join(ActiveadminJobs::Engine.root, "app", "admin")]
 
 class ActiveAdmin::Views::Pages::Base
 
