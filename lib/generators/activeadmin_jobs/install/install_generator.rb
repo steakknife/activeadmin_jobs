@@ -1,8 +1,10 @@
+require 'rails/generators'
+
 class ActiveadminJobs::InstallGenerator < Rails::Generators::Base
   def add_javascripts
-    file_path = "app/assets/javascripts/active_admin.js.coffee"
-    line_to_add = "#= require activeadmin_jobs/base\n"
-    reference = "#= require active_admin/base\n"
+    file_path = "app/assets/javascripts/active_admin.js"
+    line_to_add = "//= require activeadmin_jobs/base\n"
+    reference = "//= require active_admin/base\n"
     inject_into_file(file_path, line_to_add, after: reference)
   end
 

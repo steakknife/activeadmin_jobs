@@ -1,3 +1,5 @@
+Jobs = nil
+
 ActiveAdmin.register JobNotifier::Job, as: "Job" do
   actions :index, :show
 
